@@ -1,0 +1,130 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(120deg, rgba(246, 211, 101, 0.9), rgba(253, 160, 133, 0.9)),
+                url('e51a90cea325f6cbb4512aa4b440f14d.jpg'); /* Replace with your image file */
+    background-size:cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 36px;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Login Section */
+#login-section {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+input, button {
+    padding: 12px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    font-size: 16px;
+}
+
+button {
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Highlighted Restaurant Name */
+.highlighted {
+    font-weight: bold;
+    color: #ff5733;
+    font-size: 22px;
+}
+
+.logout-btn {
+    background: #dc3545;
+}
+
+.logout-btn:hover {
+    background: #c82333;
+}
+
+/* Inventory & Donation Sections */
+.inventory-title, .donation-title {
+    color: #444;
+    background: #ffd700;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.food-list {
+    text-align: left;
+    max-width: 500px;
+    margin: auto;
+}
+
+.food-item {
+    display: flex;
+    justify-content: space-between;
+    background: #f0f0f0;
+    padding: 12px;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.food-item button {
+    background-color: #007bff;
+}
+
+.food-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Expired food items blink red */
+@keyframes blink {
+    0% { background-color: #ffcccc; }
+    50% { background-color: #ff0000; }
+    100% { background-color: #ffcccc; }
+}
+
+.expired {
+    animation: blink 1s infinite;
+}
+
+/* Donation message styling */
+.donation-message {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffc107;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}

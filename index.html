@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Food Inventory</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Smart Food Inventory</h1>
+    
+    <div class="container" id="login-section">
+        <h2>Login / Register Restaurant</h2>
+        <input type="text" id="restaurantName" placeholder="Enter Restaurant/Hotel Name">
+        <button onclick="addRestaurant()">Enter</button>
+    </div>
+    
+    <div class="container" id="inventory-section" style="display: none;">
+        <h2>Welcome, <span id="currentRestaurant" class="highlighted"></span></h2>
+        
+        
+        <h2>Add Food Item</h2>
+        <input type="text" id="foodName" placeholder="Food Name">
+        <input type="date" id="expiryDate">
+        <input type="number" id="quantity" placeholder="Quantity">
+        <button onclick="addFood()">Add Food</button>
+        
+        <h2 class="inventory-title">Food Inventory</h2>
+        <div id="foodList" class="food-list"></div>
+        
+        <h2 class="donation-title">Food Available for Donation</h2>
+        <div id="donationList" class="food-list"></div>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
